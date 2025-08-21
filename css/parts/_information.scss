@@ -1,0 +1,168 @@
+// information
+
+#information {
+    margin-bottom: 180px;
+}
+
+@media(max-width:550px) {
+    #information {
+        margin-bottom: 80px;
+    }
+}
+
+.information-items {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+
+@media(max-width:960px) {
+    .information-items {
+        display: block;
+    }
+}
+
+.information-title {
+    margin-bottom: 80px;
+
+    h2 {
+        font-size: 48px;
+        // font-weight: normal;
+    }
+
+    p {
+        font-size: 20px;
+        font-weight: bold;
+        margin-top: 10px;
+    }
+}
+
+@media(max-width:960px) {
+    .information-title {
+        h2 {
+            font-size: 40px;
+        }
+
+        p {
+            font-weight: normal;
+        }
+    }
+}
+
+@media(max-width:550px) {
+    .information-title {
+        margin-bottom: 40px;
+
+        h2 {
+            font-size: 24px;
+        }
+
+        p {
+            font-size: 10px;
+        }
+    }
+}
+
+.information-left {
+    width: 40%;
+    // border: 1px solid;
+
+    dl {
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 40px;
+        // border: 1px solid;
+    }
+
+    dt {
+        width: 30%;
+        font-size: 16px;
+        border-bottom: none;
+        // border: 1px solid red;
+    }
+
+    dd {
+        width: 70%;
+        font-size: 16px;
+        border-bottom: none;
+        margin-bottom: 20px;
+        // border: 1px solid blue;
+    }
+}
+
+@media(max-width:960px) {
+    .information-left {
+        width: 100%;
+        padding-inline: 20%;
+    }
+
+    dt {
+        width: 15%;
+    }
+
+    dd {
+        width: 50%;
+    }
+}
+
+@media(max-width:620px) {
+    .information-left {
+        padding-inline: 5%;
+    }
+}
+
+@media(max-width:420px) {
+    .information-left {
+
+        dt {
+            font-size: 12px;
+        }
+
+        dd {
+            font-size: 12px;
+        }
+    }
+}
+
+.map {
+    width: 50%;
+
+    iframe {
+        width: 100%;
+    }
+
+    // border: 1px solid;
+}
+
+@media(max-width:960px) {
+    .map {
+        width: 100%;
+        margin-bottom: 40px;
+    }
+}
+
+.orange-btn2 {
+    width: 256px;
+    border: 3px solid #FAB14C;
+    background: #FAB14C;
+    border-radius: 40px;
+    align-items: center;
+    margin-top: 70px;
+    margin-inline: auto;
+    position: relative;
+    transition: 0.3s ease;
+
+    &:hover {
+        background: #FFFFFF;
+    }
+
+    a {
+        color: #FFFFFF;
+        font-size: 16px;
+        font-weight: bold;
+
+        &:hover {
+            color: #FAB14C;
+        }
+    }
+}

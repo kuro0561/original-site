@@ -1,0 +1,33 @@
+@charset "UTF-8";
+@use"parts/_header.scss";
+@use"parts/_top.scss";
+@use"parts/_pickup.scss";
+@use"parts/_news.scss";
+@use"parts/_exhibition.scss";
+@use"parts/_blog.scss";
+@use"parts/_information.scss";
+@use"parts/_footer.scss";
+@use"parts/_news-top.scss";
+@use"parts/_illustrated-book.scss";
+@use"parts/_exhibition-top.scss";
+
+
+img {
+    max-width: 100%;
+    vertical-align: bottom;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+.wrapper {
+    max-width: 1000px;
+    padding-inline: 2%;
+    margin-inline: auto;
+    // border: 1px solid;
+}

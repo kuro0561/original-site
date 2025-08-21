@@ -1,0 +1,147 @@
+// news
+
+.news-inner {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 100px;
+}
+
+@media(max-width:960px) {
+    .news-inner {
+        display: block;
+        padding-inline: 8%;
+
+        h3 {
+            margin-right: auto;
+            margin-bottom: 60px;
+
+            &::before {
+                display: none;
+            }
+
+            &::after {
+                content: "";
+                display: inline-block;
+                width: 45px;
+                height: 3px;
+                background-color: #30DEF2;
+                margin-left: 10px;
+                margin-bottom: 8px;
+            }
+        }
+    }
+}
+
+.news-items {
+    width: 62%;
+}
+
+@media(max-width:960px) {
+    .news-items {
+        width: 100%;
+    }
+}
+
+h3 {
+    margin-right: 70px;
+    font-size: 24px;
+    font-weight: bold;
+
+    &::before {
+        content: "";
+        display: inline-block;
+        width: 45px;
+        height: 3px;
+        background-color: #30DEF2;
+        margin-right: 10px;
+        margin-bottom: 8px;
+    }
+}
+
+dl {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 6px;
+}
+
+dt {
+    width: 20%;
+    font-size: 16px;
+    margin-bottom: 30px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #ADA8A8;
+}
+
+dd {
+    width: 65%;
+    font-size: 16px;
+    padding-left: 20px;
+    margin-bottom: 30px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #ADA8A8;
+}
+
+@media(max-width:960px) {
+    .news-items {
+        dt {
+            width: 30%;
+        }
+
+        dd {
+            width: 70%;
+        }
+    }
+}
+
+@media(max-width:360px) {
+    .news-items {
+        dd {
+            padding-left: 20px;
+        }
+    }
+}
+
+.news-btn {
+    margin-top: 20px;
+    margin-right: 90px;
+
+    a {
+        display: flex;
+        justify-content: flex-end;
+        color: #000000;
+
+        &:hover {
+            opacity: 0.7;
+        }
+    }
+
+    p {
+        font-size: 20px;
+        font-weight: bold;
+        margin-right: 10px;
+        margin-top: 5px;
+    }
+
+    img {
+        width: 40px;
+    }
+}
+
+@media(max-width:960px) {
+    .news-btn {
+        margin-right: 20px;
+    }
+}
+
+@media(max-width:530px) {
+    .news-btn {
+        margin-right: 0px;
+
+        p {
+            font-size: 16px;
+            margin-top: 8px;
+            margin-right: 8px;
+            font-weight: normal;
+        }
+    }
+}
