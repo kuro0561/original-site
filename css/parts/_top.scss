@@ -9,6 +9,12 @@
     // border: 1px solid;
 }
 
+@media(max-width: 700px) {
+    #top {
+        margin-bottom: 80px;
+    }
+}
+
 .line1 {
     position: absolute;
     left: 110px;
